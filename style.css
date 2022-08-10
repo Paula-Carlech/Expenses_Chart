@@ -27,6 +27,14 @@ body{
     position: relative;
 }
 
+section, a{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--Dark_brown);
+}
+
 div#first{
     position: absolute;
     top: 60%;
