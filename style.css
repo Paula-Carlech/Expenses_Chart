@@ -50,6 +50,84 @@ div#total-month{
     background-color: transparent;
 }
 
+.bars > div{
+    background-color: var(--Soft_red);
+    height: 200px;
+    width: 40px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#bar01{
+    left: 20%;
+}
+
+#bar02{
+    left: 30%;
+}
+
+#bar03{
+    left: 40%;
+}
+
+#bar04{
+    left: 50%;
+}
+
+#bar05{
+    left: 60%;
+}
+
+#bar06{
+    left: 70%;
+}
+
+#bar07{
+    left: 80%;
+}
+
+.day{
+    font-size: 10px;
+    font-weight: 400;
+
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.day#day01{
+    left: 20%;
+}
+
+.day#day02{
+    left: 30%;
+}
+
+.day#day03{
+    left: 40%;
+}
+
+.day#day04{
+    left: 50%;
+}
+
+.day#day05{
+    left: 60%;
+}
+
+.day#day06{
+    left: 70%;
+}
+
+.day#day07{
+    left: 80%;
+}
+
 div#last-month{
     margin: 0;
     padding: 0;
