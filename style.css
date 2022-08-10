@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
+    font-weight: 500
 }
 
 :root{
@@ -38,6 +40,28 @@ div#first{
     color: var(--Dark_brown);
 }
 
+div#total-month{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 88%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+div#last-month{
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    text-align: right;
+    position: absolute;
+    top: 88%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
 div#second{
     position: absolute;
     top: 19%;
@@ -49,6 +73,15 @@ div#second{
     border-radius: 15px;
     padding: 15px;
     color: var(--Very_pale_orange);
+}
+
+div#second > p{
+    margin-left: 15px;
+}
+
+.small{
+    font-weight: 400;
+    font-size: 15px;
 }
 
 img{
