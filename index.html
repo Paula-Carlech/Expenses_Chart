@@ -28,20 +28,50 @@
             <p style="font-size: 25pt;">$00.00</p>
         </div>
 
-        <div class="bars">
-            <div id="bar01"></div> <p class="day" id="day01">mom</p>
-            <div id="bar02"></div> <p class="day" id="day02">tue</p>
-            <div id="bar03"></div> <p class="day" id="day03">wed</p>
-            <div id="bar04"></div> <p class="day" id="day04">thu</p>
-            <div id="bar05"></div> <p class="day" id="day05">fri</p>
-            <div id="bar06"></div> <p class="day" id="day06">sat</p>
-            <div id="bar07"></div> <p class="day" id="day07">sun</p>
-        </div>
+        <div id="chart"></div>
 
         <div id="last-month">
             <p>0.00%</p>
             <p class="small">From last month</p>
         </div>
     </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart(){
+            const container = document.querySelector('#chart')
+            const data = new google.visualization.arrayToDataTable ([
+                ['Day', 'Value'],
+
+                ['mon', 17.45],
+            
+                ['tue', 34.91],
+
+                ['wed', 52.36],
+     
+                ['thu', 31.07],
+           
+                ['fri', 23.39],
+           
+                ['sat', 43.28],
+            
+                ['sun', 25.48],
+            
+            ])
+
+            const options = {
+                title: 'Bar',
+                height: 350,
+                width: 550
+            }
+
+            const chart = new google.visualization.ColumnChart(container)
+            chart.draw(data, options)
+        }
+    </script>
 </body>
 </html>
