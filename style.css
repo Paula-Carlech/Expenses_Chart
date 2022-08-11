@@ -53,7 +53,7 @@ div#total-month{
     padding: 0;
     position: absolute;
     top: 88%;
-    left: 15%;
+    left: 20%;
     transform: translate(-50%, -50%);
     background-color: transparent;
 }
@@ -65,7 +65,7 @@ div#last-month{
     text-align: right;
     position: absolute;
     top: 88%;
-    left: 84%;
+    left: 82%;
     transform: translate(-50%, -50%);
     background-color: transparent;
 }
